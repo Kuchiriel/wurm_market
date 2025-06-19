@@ -1,0 +1,49 @@
+{
+  "forum_base_url": "https://forum.wurmonline.com",
+  "discord_token": "",
+  "scrape_interval": 3600,
+  "max_pages": 10,
+  "delay_between_requests": 2,
+  "database_path": "wurm_market.db",
+  "categories": {
+    "tools": ["axe", "pickaxe", "hammer", "saw", "knife", "chisel", "file", "rake", "shovel", "scissor"],
+    "weapons": ["sword", "spear", "bow", "arrow", "club", "mace", "staff", "wand", "dagger"],
+    "armor": ["helmet", "armor", "shield", "boot", "gauntlet", "sleeve", "jacket", "cap"],
+    "materials": ["rope", "brick", "log", "plank", "metal lump", "ore", "clay", "tar", "cotton", "wemp"],
+    "food": ["bread", "stew", "meal", "wine", "beer", "juice", "soup", "pie", "cake"],
+    "misc": ["lamp", "chest", "bed", "table", "chair", "barrel", "jar", "pottery", "sail", "cart"],
+    "enchanted": ["enchanted", "blessed", "wind of ages", "circle of cunning", "aura of shared pain"],
+    "rare": ["rare", "supreme", "fantastic"]
+  },
+  "servers": ["Independence", "Pristine", "Celebration", "Xanadu", "Cadence", "Harmony", "Melody"],
+  "price_patterns": [
+    "([0-9]+\\.?[0-9]*) ?s(?:ilver)?(?:$|\\s)",
+    "([0-9]+\\.?[0-9]*) ?c(?:opper)?(?:$|\\s)",  
+    "([0-9]+\\.?[0-9]*) ?i(?:ron)?(?:$|\\s)",
+    "([0-9]+\\.?[0-9]*)s(?:$|\\s)",
+    "([0-9]+\\.?[0-9]*)c(?:$|\\s)"
+  ],
+  "quality_patterns": [
+    "ql ?([0-9]+)",
+    "quality ?([0-9]+)",
+    "q([0-9]+)"
+  ],
+  "enchantment_patterns": [
+    "woa ?([0-9]+)",
+    "coc ?([0-9]+)",
+    "aosp ?([0-9]+)",
+    "enchanted",
+    "blessed"
+  ],
+  "forum_sections": {
+    "selling": "/index.php?/forum/9-selling/",
+    "buying": "/index.php?/forum/8-buying/",
+    "services": "/index.php?/forum/10-services/",
+    "commerce": "/index.php?/forum/7-commerce/"
+  },
+  "steam_urls": [
+    "https://steamcommunity.com/app/1179680/discussions/",
+    "https://steamcommunity.com/app/366220/discussions/"
+  ],
+  "output_formats": ["json", "csv", "html"]
+}
